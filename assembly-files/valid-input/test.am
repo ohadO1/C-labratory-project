@@ -1,0 +1,14 @@
+.entry HELLO
+.extern TEST
+HELLO: clr r2
+A: .data 2, 3, 4, 5,  5
+WORD: .string "helloWorld"
+cmp #25, r4
+inc r6
+red r5
+lea TEST, r3
+lea  WORD, r7
+add A, r0
+sub #3, r1
+cmp A, WORD
+stop
